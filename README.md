@@ -1,5 +1,6 @@
 # GIVE-Docker
 GIVE-Docker is a Docker image for _**GIVE (Genomic Interactive Visualization Engine)**_. Please check [GIVE homepage]](give.genemo.org) and [GIVE GitHub Repo](https://github.com/Zhong-Lab-UCSD/Genomic-Interactive-Visualization-Engine) for more information about GIVE. This repo is a part of GIVE project. Here we proovide Dockfile, scripts and data for building GIVE-Docker. Users familiar with Docker can build their own version of GIVE Docker image.
+The GIVE-Docker is stored in [Docker Hub](https://hub.docker.com/r/zhonglab/give/). You can pull it by `docker pull zhonglab/give`.
 
 ## Description of GIVE-Docker
 ### Base Iamge
