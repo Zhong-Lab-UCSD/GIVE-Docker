@@ -19,4 +19,4 @@ mysql -u root compbrowser < /tmp/dump_compbrowser.sql
 mysql -u root hg19 < /tmp/dump_hg19.sql
 
 rm /tmp/*
-
+chmod +x /bin/start.sh

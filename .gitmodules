@@ -1,0 +1,3 @@
+[submodule "Genomic-Interactive-Visualization-Engine"]
+	path = Genomic-Interactive-Visualization-Engine
+	url = https://github.com/Zhong-Lab-UCSD/Genomic-Interactive-Visualization-Engine

@@ -9,14 +9,11 @@ COPY import/001-give-ssl.conf /etc/apache2/sites-available/001-give-ssl.conf
 COPY import/setgive_script.sh /tmp/setgive_script.sh
 COPY import/dump_compbrowser.sql /tmp/dump_compbrowser.sql
 COPY import/dump_hg19.sql /tmp/dump_hg19.sql
-
+COPY import/start.sh /bin/start.sh
 
 ## use script to set apache2, mysql database with built-in tracks
 RUN /bin/bash /tmp/setgive_script.sh
 
 EXPOSE 80 443 3306 
 
-# start mysql, apache2 and PHP service
-CMD service mysql start \
-    && service apache2 start \
-    && /bin/bash
+CMD start.sh && /bin/bash
