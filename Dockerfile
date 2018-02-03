@@ -1,9 +1,10 @@
 From linode/lamp
 
-COPY Genomic-Interactive-Visualization-Engine/give /var/www/give 
+COPY Genomic-Interactive-Visualization-Engine/html /var/www/give/html 
+COPY Genomic-Interactive-Visualization-Engine/includes /var/www/give/includes 
 COPY import/index.html /var/www/give/html/index.html
 COPY import/constants.php /var/www/give/includes/constants.php
-COPY import/constants.js /var/www/give/html/components/bower_components/genemo-data-components/basic-func/constants.js
+COPY import/constants.js /var/www/give/html/components/basic-func/constants.js
 COPY import/001-give.conf /etc/apache2/sites-available/001-give.conf
 COPY import/001-give-ssl.conf /etc/apache2/sites-available/001-give-ssl.conf
 COPY import/setgive_script.sh /tmp/setgive_script.sh

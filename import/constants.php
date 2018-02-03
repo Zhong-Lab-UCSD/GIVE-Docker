@@ -10,7 +10,7 @@
   define('CPB_EDIT_USER', 'CPB_EDIT_USER');
   define('CPB_EDIT_PASS', 'CPB_EDIT_PASS');
 
-  define('CLASS_DIR', '/var/www/includes/classes/');
+  define('CLASS_DIR', '/var/www/give/includes/classes/');
   define('GOOGLE_ANALYTICS_ACCOUNT', 'GOOGLE_ANALYTICS_ACCOUNT');
 
   define('CUSTOM_TRACK_TABLE_NAME', 'customTrackFiles');
