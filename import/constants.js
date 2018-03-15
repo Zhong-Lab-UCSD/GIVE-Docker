@@ -10,7 +10,7 @@ var GIVe = (function (give) {
 
   give.verboseLvl = give.VERBOSE_MAJ_ERROR
 
-  give.Host = ''
+  give.Host = 'http://localhost:40080'
 
   give.ServerPath = '/givdata/'
 
