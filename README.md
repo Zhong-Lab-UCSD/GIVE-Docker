@@ -14,13 +14,17 @@ All the configurations can be tracked in the `Dockerfile` and `setgive_script.h`
 - Copy pre-defined `001-give` and `001-give-ssl` config files into `/etc/apache2/sites-avaliable`. And enable these sites.
 #### PHP
 - Install php5-mysqlnd for communication between php and MySQL.
-#### GIVE Components
-- The latest version of GIVE components are set in `/var/www/give` folder. In this repo, the GIVE repo is added as a submodule. 
-- Copy `constants.js` into `/var/www/give/html/components/basic-func/` folder. Copy `constants.php` into `/var/www/give/includes/` folder. These pre-built files will set some constant parameters related to PHP-MySQL communication.
-- Copy a pre-built `index.html` file into `/var/www/give/html/`. It's a demo genome browser.
 #### MySQL
 We added a [demo genome browser](https://github.com/Zhong-Lab-UCSD/Genomic-Interactive-Visualization-Engine/tree/master/gallery/Demo2-ENCODE2_ChIA-PET) into MySQL database.
 - Create `compbrowser` and `hg19` database. Then, load pre-built data into these two databases.
+#### GIVE Components
+- The latest version of GIVE components are set in `/var/www/give` folder. In this repo, the GIVE repo is added as a submodule in this GitHub repo. 
+- Copy `constants.js` into `/var/www/give/html/components/basic-func/` folder. Copy `constants.php` into `/var/www/give/includes/` folder. These pre-built files will set some constant parameters related to PHP-MySQL communication.
+- Copy a pre-built `index.html` file into `/var/www/give/html/`. It's a demo genome browser.
+#### GIVE-Toolbox
+- Copy bash script tools of GIVE-Toolbox into /usr/local/bin/ and set them executable.
+- Copy example data to /tmp/example_data folder.
+
 ## Usage of GIVE-Docker
 The usage of GIVE can be found in [GIVE Tutorial 3: Easy local deployment of GIVE with GIVE-Docker](https://github.com/Zhong-Lab-UCSD/Genomic-Interactive-Visualization-Engine/blob/master/tutorials/GIVE-Docker.md)
 
