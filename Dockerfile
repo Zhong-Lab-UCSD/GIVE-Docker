@@ -3,7 +3,8 @@ From linode/lamp
 COPY Genomic-Interactive-Visualization-Engine/html /var/www/give/html 
 COPY Genomic-Interactive-Visualization-Engine/includes /var/www/give/includes 
 COPY Genomic-Interactive-Visualization-Engine/GIVE-Toolbox/*.sh /usr/local/bin/ 
-COPY Genomic-Interactive-Visualization-Engine/GIVE-Toolbox/example_data /tmp/example_data 
+
+COPY import/example_data /tmp/example_data 
 
 COPY import/index.html /var/www/give/html/index.html
 COPY import/constants.php /var/www/give/includes/constants.php
